@@ -4,63 +4,74 @@
 	<meta charset="utf-8">
 	<title>First webpage</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div>
-		<img src="https://via.placeholder.com/150">
-		<h1>John Doe</h1>
-		<h3>Web Developer at Careerfoundry</h3>
-		<p class="quote">{{ Pause and ponder }}</p>
-	</div>
-	<div>
+	<div class="container">
+		<div class="intro">
+			<img src="https://via.placeholder.com/150">
+			<h1>John Doe</h1>
+			<h3>Web Developer at Careerfoundry</h3>
+			<p class="quote">{{ Pause and ponder }}</p>
+		</div>
+		<div class="about-grid">
+			<div class="i-am">
+				<h3>I am</h3>
+				<ul class="about-list">
+					<li>An engineer</li>
+					<li>A reader</li>
+					<li>A hobby cook</li>
+				</ul>
+			</div>
+			<div class="i-like">
+				<h3>I like to</h3>
+				<ul class="about-list">
+					<li>Meet new people</li>
+					<li>Play guitar</li>
+					<li>Eat Icecream</li>
+				</ul>
+			</div>
+		</div>
 		<div>
-			<h3>I am</h3>
+			<h3>My Projects</h3>
+			<img src="images/project-5.jpg">
+			<img src="images/project-2.jpg">
+			<img src="images/project-3.jpg">
+			<img src="images/project-4.jpg">
+		</div>
+		<div>
+			<h3>Links</h3>
 			<ul>
-				<li>An engineer</li>
-				<li>A reader</li>
-				<li>A hobby cook</li>
+				<li>
+					<a href="https://github.com/<user>">Github</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/<user>">Twitter</a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/<user>">Linkedin</a>
+				</li>
 			</ul>
 		</div>
 		<div>
-			<h3>I like to</h3>
-			<ul>
-				<li>Meet new people</li>
-				<li>Play guitar</li>
-				<li>Eat Icecream</li>
-			</ul>
+			<form action="#">
+				<label for="email">
+					Email: <input type="email" id="email" placeholder="Enter your email">
+				</label>
+				<label for="message">
+					Message: <textarea id="message">Your Message</textarea>
+				</label>
+				<input type="submit" valid="Send Message">
+			</form>
 		</div>
-	</div>
-	<div>
-		<h3>My Projects</h3>
-		<img src="images/project-5.jpg">
-		<img src="images/project-2.jpg">
-		<img src="images/project-3.jpg">
-		<img src="images/project-4.jpg">
-	</div>
-	<div>
-		<h3>Links</h3>
-		<ul>
-			<li>
-				<a href="https://github.com/<user>">Github</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/<user>">Twitter</a>
-			</li>
-			<li>
-				<a href="https://linkedin.com/<user>">Linkedin</a>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<form action="#">
-			<label for="email">
-				Email: <input type="email" id="email" placeholder="Enter your email">
-			</label>
-			<label for="message">
-				Message: <textarea id="message">Your Message</textarea>
-			</label>
-			<input type="submit" valid="Send Message">
-		</form>
+		<div class="grid-table">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
 	</div>
 </body>
 </html>
