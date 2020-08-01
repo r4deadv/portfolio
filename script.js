@@ -58,6 +58,14 @@ function emailValidate(email) {
 	}
 }
 
+function validateNSFW(message) {
+	if (message.includes('crap')) {
+		return false
+	} else {
+		return true;
+	}
+}
+
 function clickListener(event) {
 	event.preventDefault();
 	let emailInput = document.querySelector('\#email');
@@ -70,6 +78,10 @@ function clickListener(event) {
 	console.log('The email adress must contain @'); 
 	return false;
 	}	
+	if (validateNSFW(messageText) !==true) {
+		console.log('Message can not contain unsafe words')
+	return false;
+	}
 	console.log('email:', emailText, 'message:', messageText);
 	console.log('Thanks for your message');
 	
