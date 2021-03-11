@@ -53,6 +53,7 @@ h1, h2, h3, h4 {
 .project-image:hover {
 	filter: brightness(.70);
 	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .36);
+	cursor: pointer;
 }
 .project-image-wrapper {
 	justify-self: center;
@@ -127,4 +128,19 @@ hr {
 	border: 0;
 	height: 1px;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+}
+.links-list li {
+	padding: 5px 0;
+}
+.links-list a:link,
+.links-list a:visited {
+	color: #001f3f;
+	text-decoration: none;
+}
+.links-list a:hover {
+	font-size: 1.2em;
+	color: #001f3f;
+}
+.links-list a:active {
+	color: #1f1f1f;
 }
